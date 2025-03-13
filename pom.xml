@@ -15,7 +15,7 @@
 
     <properties>
         <sonar.coverage.jacoco.xmlReportPaths>
-            ${project.basedir}/test-aggregator/target/site/jacoco-aggregate/jacoco.xml
+            ${project.basedir}/test-aggregator/target/jacoco-ut/jacoco.xml
         </sonar.coverage.jacoco.xmlReportPaths>
     </properties>
 
