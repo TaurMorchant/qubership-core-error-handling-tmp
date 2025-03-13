@@ -37,7 +37,6 @@ public class TmfError {
         builder.code = e.getErrorCode().getCode();
         builder.reason = e.getErrorCode().getTitle();
         builder.detail = e.getDetail();
-        log.debug("tmp");
         return builder;
     }
 
