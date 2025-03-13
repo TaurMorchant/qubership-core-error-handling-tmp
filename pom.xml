@@ -10,6 +10,7 @@
     <modules>
         <module>core-error-handling-runtime</module>
         <module>core-error-handling-rest</module>
+        <module>test-aggregator</module>
     </modules>
 
     <build>
