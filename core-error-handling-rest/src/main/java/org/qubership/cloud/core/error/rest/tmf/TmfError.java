@@ -1,6 +1,7 @@
 package org.qubership.cloud.core.error.rest.tmf;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.extern.slf4j.Slf4j;
 import org.qubership.cloud.core.error.runtime.ErrorCodeException;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,6 +10,7 @@ import lombok.NoArgsConstructor;
 import java.util.Map;
 import java.util.TreeMap;
 
+@Slf4j
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -35,6 +37,7 @@ public class TmfError {
         builder.code = e.getErrorCode().getCode();
         builder.reason = e.getErrorCode().getTitle();
         builder.detail = e.getDetail();
+        log.debug("tmp");
         return builder;
     }
 
